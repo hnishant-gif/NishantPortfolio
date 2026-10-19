@@ -1,7 +1,5 @@
-# Nishant Rajput — Design Portfolio
+# B&N Creative
 
-Responsive portfolio featuring 71 designs, grouped by category.
+Website with 71 categorized portfolio designs, small responsive thumbnails and a full-size image viewer.
 
-Open index.html to view locally. All artwork is embedded in the HTML file.
-
-GitHub Pages deployment uses .github/workflows/static.yml.
+Open index.html to preview. Internet is required for Bootstrap, icon and font CDNs supplied with the original website. The enquiry form opens WhatsApp with a draft message; the visitor sends it there.

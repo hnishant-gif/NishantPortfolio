@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&N Creative | Design, Branding & Portfolio</title>
+    <meta name="description" content="B&N Creative in Surat: website design, graphic design, branding, printing and packaging. Explore our categorized portfolio.">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts: Poppins & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles Css -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+</head>
+<body id="home">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <!--div class="logo-box">ZN</div>
+                <div>
+                    <span style="font-weight: 700; color: #111; font-size: 0.9rem;">CREATIVE</span>
+                    <span>We Create Your Imagination</span>
+                </div-->
+                <img alt="B&N Creative" src="images/logo.jpg" style="width:100%; display:inline-block;">
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <!-- Services Hover Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu shadow" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#services">Website Design</a></li>
+                            <li><a class="dropdown-item" href="#services">Graphic Design</a></li>
+                            <li><a class="dropdown-item" href="#services">Printing</a></li>
+                            <li><a class="dropdown-item" href="#services">Branding</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#services">SEO & Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#contact" class="btn btn-quote">GET A QUOTE</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 ">
+                <div class="hero-bg-mobile">
+                    <div class="hero-subtitle mb-3"><strong>WELCOME TO B&N CREATIVE</strong></div>
+                    <h1 class="hero-title mb-4">We Create Your <span>Imagination</span></h1>
+                    <p class="hero-desc mb-5">We are a full-service creative agency providing Website Design, Graphic Design, Printing & Branding solutions to help your business stand out from the crowd.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-quote px-4 py-3">GET FREE QUOTE</a>
+                        <a href="#portfolio" class="btn btn-portfolio text-black px-4 py-3 fw-semibold">VIEW PORTFOLIO <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center section-header">
+                <div class="section-subtitle">OUR SERVICES</div>
+                <h2 class="section-title">Creative Solutions For Your Business</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon text-center">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Website Design</h4>
+                        <p class="text-muted mb-4 small">We design modern, responsive & SEO friendly websites that help you grow your business online.</p>
+                        <a href="#home" class="explore-link">EXPLORE MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Graphic Design</h4>
+                        <p class="text-muted mb-4 small">From logos to marketing materials, we create stunning designs that leave a lasting impression.</p>
+                        <a href="#home" class="explore-link">EXPLORE MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Printing</h4>
+                        <p class="text-muted mb-4 small">High-quality printing services for all your business and personal printing needs.</p>
+                        <a href="#home" class="explore-link">EXPLORE MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3 h5">Branding</h4>
+                        <p class="text-muted mb-4 small">We build strong brand identities that connect with your audience and represent your business.</p>
+                        <a href="#home" class="explore-link">EXPLORE MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+      <div class="container py-5">
+        <div class="text-center section-header">
+          <div class="section-subtitle">OUR PORTFOLIO</div>
+          <h2 class="section-title">Ideas Brought to Life</h2>
+          <div class="title-divider"></div>
+          <p class="text-muted mt-4">Explore 71 designs across websites, jewellery, branding, print, packaging and advertising.</p>
+        </div>
+        <div class="portfolio-filters" id="workFilters" aria-label="Filter portfolio by category"></div>
+        <p id="workCount" class="work-count" role="status" aria-live="polite"></p>
+        <div id="workSections" class="work-sections"></div>
+        <noscript><p>Enable JavaScript to browse the portfolio gallery.</p></noscript>
+      </div>
+    </section>
+    <dialog id="workViewer" aria-labelledby="workViewerTitle">
+      <div class="work-viewer-bar"><h2 id="workViewerTitle"></h2><button type="button" id="workClose" aria-label="Close image viewer">Close ×</button></div>
+      <img id="workViewerImage" alt="">
+    </dialog>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="why-choose-section">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="section-subtitle text-warning mb-2">WHY CHOOSE US</div>
+                    <h2 class="section-title text-white mb-5">We Deliver Excellence</h2>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="stat-box">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-box">
+                                <div class="stat-number">1000+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-box">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Happy Clients</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-box">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Countries Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img alt="Creative design showcase" src="images/bg-creative-video.png" style="width:100%; display:block;">
+                    <!--div class="video-showcase-card text-center p-5">
+                        <div class="play-btn-pulse" onclick="showVideoMessage()">
+                            <i class="fa-solid fa-play ms-1"></i>
+                        </div>
+                    </div-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center section-header">
+                <div class="section-subtitle">TESTIMONIALS</div>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="text-muted small mb-4">"B&N Creative transformed our ideas into a beautiful website. Their team is professional, creative and very responsive."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://placehold.co/100x100/FF7A00/FFFFFF?text=NP" alt="Client Avatar" class="client-avatar">
+                            <div>
+                                <h6 class="fw-bold mb-0">Dr. Neha Patel</h6>
+                                <small class="text-muted">Dental Care Clinic</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="text-muted small mb-4">"Amazing designs and excellent printing quality. We are very happy with their services and support."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://placehold.co/100x100/1a1a1a/FFFFFF?text=KM" alt="Client Avatar" class="client-avatar">
+                            <div>
+                                <h6 class="fw-bold mb-0">Karan Mehta</h6>
+                                <small class="text-muted">Business Owner</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="text-muted small mb-4">"Highly recommended! They delivered our brand identity perfectly and on time."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://placehold.co/100x100/333333/FFFFFF?text=RS" alt="Client Avatar" class="client-avatar">
+                            <div>
+                                <h6 class="fw-bold mb-0">Ravi Sharma</h6>
+                                <small class="text-muted">Marketing Heed</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-2 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-4">
+                        <!--div class="logo-box">ZN</div>
+                        <div>
+                            <span style="font-weight: 700; color: white; font-size: 0.9rem;">CREATIVE</span>
+                            <span style="color: #aaa; font-size: 0.75rem;">We Create Your Imagination</span>
+                        </div-->
+                        <img alt="B&N Creative" src="images/footer-logo.jpg" style="width:100%; display:block;">
+                    </div>
+                    <p class="small text-secondary mb-4">We are a creative agency providing website design, graphic design, printing and branding solutions.</p>
+                    <div class="social-icons">
+                        <a href="#home"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#home"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#home"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#home"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">QUICK LINKS</h5>
+                    <ul class="list-unstyled footer-links small">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">OUR SERVICES</h5>
+                    <ul class="list-unstyled footer-links small">
+                        <li><a href="#services">Website Design</a></li>
+                        <li><a href="#services">Graphic Design</a></li>
+                        <li><a href="#services">Printing</a></li>
+                        <li><a href="#services">Branding</a></li>
+                        <li><a href="#services">SEO & Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <div class="mt-4 text-secondary small">
+                        <p class="mb-1"><i class="fa-solid fa-location-dot text-warning me-2"></i> 401, Shubh Square, Opp. City Gold, Surat, Gujarat, India</p>
+                        <p class="mb-1"><i class="fa-solid fa-phone text-warning me-2"></i> +91 90337 64099</p>
+                        <p class="mb-0"><i class="fa-solid fa-envelope text-warning me-2"></i> info@bncreative.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">GET IN TOUCH</h5>
+                    <form class="footer-form" onsubmit="handleFormSubmit(event)">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-quote w-100">ENQUIRE ON WHATSAPP <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="copyright-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 small text-secondary">&copy; 2026 B&N Creative. All Rights Reserved.</p>
+                <div class="d-flex gap-3 small text-secondary">
+                    <a href="#home" class="text-secondary text-decoration-none">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#home" class="text-secondary text-decoration-none">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Alert Notification -->
+    <div id="customAlert" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080; display: none;">
+        <div class="toast show align-items-center text-white bg-dark border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="alertMessage">
+                    Thank you! Your message has been sent successfully.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" onclick="hideAlert()"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+	
+	// Form Submit Handler
+	function handleFormSubmit(event) {
+        event.preventDefault();
+        const fields=event.target.querySelectorAll('input,textarea');
+        const message='Hello B&N Creative,\nName: '+fields[0].value+'\nEmail: '+fields[1].value+'\n\n'+fields[2].value;
+        window.open('https://wa.me/919033764099?text='+encodeURIComponent(message),'_blank','noopener,noreferrer');
+    }
+    
+    function showVideoMessage() {
+		const alertBox = document.getElementById('customAlert');
+		document.getElementById('alertMessage').innerText = "Playing B&N Creative agency showcase video...";
+		alertBox.style.display = 'block';
+		setTimeout(() => {
+			hideAlert();
+		}, 3000);
+	}
+	
+	function hideAlert() {
+		document.getElementById('customAlert').style.display = 'none';
+	}
+    </script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
