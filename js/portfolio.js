@@ -398,6 +398,83 @@ const projects=[
     "category": "Print Design",
     "image": "images/work/editorial-collection-06.webp",
     "description": "Art exhibition · Poster design"
+  },
+  {
+    "title": "KG Dentistry",
+    "category": "Web Design",
+    "url": "https://www.kgdentistry.com/",
+    "initials": "KG",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Dr. Jason Lembach — Fallston Dentist",
+    "category": "Web Design",
+    "url": "https://www.fallstondentist.com/",
+    "initials": "JL",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Ocean Family Dental",
+    "category": "Web Design",
+    "url": "https://www.lbidentist.com/",
+    "initials": "OF",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Schofield Dental",
+    "category": "Web Design",
+    "url": "https://www.schofielddental.com/",
+    "initials": "SD",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Newtown Dental Care",
+    "category": "Web Design",
+    "url": "https://www.newtowndentalcare.com/",
+    "initials": "ND",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "West Park Dental",
+    "category": "Web Design",
+    "url": "https://www.westparksmiles.com/",
+    "initials": "WP",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Mt. Juliet Family Dentistry",
+    "category": "Web Design",
+    "url": "https://www.mtjulietfamilydentistry.com/",
+    "initials": "MJ",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Olga Shvarts DMD — Pennsylvania Center for Advanced Dentistry",
+    "category": "Web Design",
+    "url": "https://www.olgashvartsdmd.com/",
+    "initials": "OS",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Allen & Holm Family & Cosmetic Dentistry",
+    "category": "Web Design",
+    "url": "https://www.myburnsvilledentist.com/",
+    "initials": "AH",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Lawrenceville Dental Arts",
+    "category": "Web Design",
+    "url": "https://www.lawrencevilledentalarts.com/",
+    "initials": "LA",
+    "description": "Dental website · Live project"
+  },
+  {
+    "title": "Wycliff Family Dentistry",
+    "category": "Web Design",
+    "url": "https://www.wyclifffamilydentistry.com/",
+    "initials": "WF",
+    "description": "Dental website · Live project"
   }
 ];
 const categoryOrder=['Web Design','Jewellery','Branding','Print Design','Packaging','Social Media','Paid Ads','Festival & Greetings'];
@@ -417,6 +494,17 @@ function renderWork(category='All work'){
   const grid=document.createElement('div');grid.className='work-grid';section.append(heading,grid);
   entries.forEach(p=>{
    const article=document.createElement('article');article.className='work-card';
+   if(p.url){
+    const link=document.createElement('a');link.className='work-thumb work-site';link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Visit '+p.title+' (opens in a new tab)');
+    const label=document.createElement('span');label.className='work-site-label';label.textContent='LIVE WEBSITE';
+    const mark=document.createElement('span');mark.className='work-site-mark';mark.textContent=p.initials;
+    const domain=document.createElement('span');domain.className='work-site-domain';domain.textContent=new URL(p.url).hostname.replace(/^www\\./,'');
+    const visit=document.createElement('span');visit.className='work-site-visit';visit.textContent='Visit website ↗';
+    link.append(label,mark,domain,visit);
+    const name=document.createElement('h4');name.textContent=p.title;const description=document.createElement('p');description.textContent=p.description;
+    article.append(link,name,description);grid.append(article);return;
+   }
+
    const button=document.createElement('button');button.type='button';button.className='work-thumb'+(p.longImage?' work-tall':'');button.setAttribute('aria-label','View '+p.title);
    const image=document.createElement('img');image.src=p.image;image.alt=p.title;image.loading='lazy';image.decoding='async';
    const arrow=document.createElement('span');arrow.className='work-arrow';arrow.textContent='↗';arrow.setAttribute('aria-hidden','true');button.append(image,arrow);
