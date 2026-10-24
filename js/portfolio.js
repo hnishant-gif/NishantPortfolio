@@ -144,18 +144,6 @@ const projects=[
     "description": "Public awareness · Social media creative"
   },
   {
-    "title": "Alliance for Animals and the Environment — Logo",
-    "category": "Branding",
-    "image": "images/work/collection-01.webp",
-    "description": "Logo design · Organisation identity"
-  },
-  {
-    "title": "Angry Developers — Logo",
-    "category": "Branding",
-    "image": "images/work/collection-02.webp",
-    "description": "Logo design · Brand identity"
-  },
-  {
     "title": "AXIS AUTO — Drive with confidence",
     "category": "Paid Ads",
     "image": "images/work/collection-07.webp",
@@ -232,22 +220,10 @@ const projects=[
     "longImage": true
   },
   {
-    "title": "Diamond Girl Athletics — Logo",
-    "category": "Branding",
-    "image": "images/work/new-collection-02.webp",
-    "description": "Athletics · Logo design"
-  },
-  {
     "title": "B&R Techno — Diwali greetings",
     "category": "Festival & Greetings",
     "image": "images/work/new-collection-03.webp",
     "description": "Diwali · Branded greeting creative"
-  },
-  {
-    "title": "Dog Jog — Logo",
-    "category": "Branding",
-    "image": "images/work/new-collection-04.webp",
-    "description": "Pet accessories · Logo design"
   },
   {
     "title": "Pace Studio — Build strength, find your pace",
@@ -272,12 +248,6 @@ const projects=[
     "category": "Social Media",
     "image": "images/work/new-collection-11.webp",
     "description": "Insurance · Social advertisement mockup"
-  },
-  {
-    "title": "Crecimiento en Redes — Logo",
-    "category": "Branding",
-    "image": "images/work/new-collection-13.webp",
-    "description": "Logo design · Brand identity"
   },
   {
     "title": "Fresh Table — Fresh food, better days 01",
