@@ -498,7 +498,7 @@ function renderWork(category='All work'){
     const link=document.createElement('a');link.className='work-thumb work-site';link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Visit '+p.title+' (opens in a new tab)');
     const label=document.createElement('span');label.className='work-site-label';label.textContent='LIVE WEBSITE';
     const mark=document.createElement('span');mark.className='work-site-mark';mark.textContent=p.initials;
-    const domain=document.createElement('span');domain.className='work-site-domain';domain.textContent=new URL(p.url).hostname.replace(/^www\\./,'');
+    const domain=document.createElement('span');domain.className='work-site-domain';domain.textContent=new URL(p.url).hostname.replace(/^www\./,'');
     const visit=document.createElement('span');visit.className='work-site-visit';visit.textContent='Visit website ↗';
     link.append(label,mark,domain,visit);
     const name=document.createElement('h4');name.textContent=p.title;const description=document.createElement('p');description.textContent=p.description;
