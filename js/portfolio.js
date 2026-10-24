@@ -404,77 +404,88 @@ const projects=[
     "category": "Web Design",
     "url": "https://www.kgdentistry.com/",
     "initials": "KG",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/kgdentistry.webp"
   },
   {
     "title": "Dr. Jason Lembach — Fallston Dentist",
     "category": "Web Design",
     "url": "https://www.fallstondentist.com/",
     "initials": "JL",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/fallstondentist.webp"
   },
   {
     "title": "Ocean Family Dental",
     "category": "Web Design",
     "url": "https://www.lbidentist.com/",
     "initials": "OF",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/lbidentist.webp"
   },
   {
     "title": "Schofield Dental",
     "category": "Web Design",
     "url": "https://www.schofielddental.com/",
     "initials": "SD",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/schofielddental.webp"
   },
   {
     "title": "Newtown Dental Care",
     "category": "Web Design",
     "url": "https://www.newtowndentalcare.com/",
     "initials": "ND",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/newtowndentalcare.webp"
   },
   {
     "title": "West Park Dental",
     "category": "Web Design",
     "url": "https://www.westparksmiles.com/",
     "initials": "WP",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/westparksmiles.webp"
   },
   {
     "title": "Mt. Juliet Family Dentistry",
     "category": "Web Design",
     "url": "https://www.mtjulietfamilydentistry.com/",
     "initials": "MJ",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/mtjulietfamilydentistry.webp"
   },
   {
     "title": "Olga Shvarts DMD — Pennsylvania Center for Advanced Dentistry",
     "category": "Web Design",
     "url": "https://www.olgashvartsdmd.com/",
     "initials": "OS",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/olgashvartsdmd.webp"
   },
   {
     "title": "Allen & Holm Family & Cosmetic Dentistry",
     "category": "Web Design",
     "url": "https://www.myburnsvilledentist.com/",
     "initials": "AH",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/myburnsvilledentist.webp"
   },
   {
     "title": "Lawrenceville Dental Arts",
     "category": "Web Design",
     "url": "https://www.lawrencevilledentalarts.com/",
     "initials": "LA",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/lawrencevilledentalarts.webp"
   },
   {
     "title": "Wycliff Family Dentistry",
     "category": "Web Design",
     "url": "https://www.wyclifffamilydentistry.com/",
     "initials": "WF",
-    "description": "Dental website · Live project"
+    "description": "Dental website · Live project",
+    "image": "images/websites/wyclifffamilydentistry.webp"
   }
 ];
 const categoryOrder=['Web Design','Jewellery','Branding','Print Design','Packaging','Social Media','Paid Ads','Festival & Greetings'];
@@ -500,7 +511,7 @@ function renderWork(category='All work'){
     const mark=document.createElement('span');mark.className='work-site-mark';mark.textContent=p.initials;
     const domain=document.createElement('span');domain.className='work-site-domain';domain.textContent=new URL(p.url).hostname.replace(/^www\./,'');
     const visit=document.createElement('span');visit.className='work-site-visit';visit.textContent='Visit website ↗';
-    link.append(label,mark,domain,visit);
+    if(p.image){link.className+=' work-site-screenshot';const screenshot=document.createElement('img');screenshot.src=p.image;screenshot.alt=p.title+' homepage screenshot';screenshot.loading='lazy';screenshot.decoding='async';link.append(screenshot,visit);}else{link.append(label,mark,domain,visit);}
     const name=document.createElement('h4');name.textContent=p.title;const description=document.createElement('p');description.textContent=p.description;
     article.append(link,name,description);grid.append(article);return;
    }
